@@ -1,0 +1,22 @@
+# 放在 F:\apps\git\blog\source\_data\next.yml 中
+
+# 1. Giscus 配置
+giscus:
+  enable: true
+  repo: hachiroku-lose/hachiroku-lose.github.io
+  repo_id: R_kgDOPakpAQ
+  category: Comments
+  category_id: DIC_kwDOPakpAc4Cw5mF
+  mapping: title
+
+# 2. 评论系统激活
+comments:
+  active: giscus # <-- 强制激活 Giscus
+  style: tabs
+  storage: true
+  lazyload: false
+
+# 3. 解决之前代码高亮的 TypeError 问题（如果您的主题配置中设置了）
+codeblock:
+  highlight_theme: default
+  enable: false
