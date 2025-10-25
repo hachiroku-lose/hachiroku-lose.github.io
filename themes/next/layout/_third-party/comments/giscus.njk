@@ -1,0 +1,32 @@
+{%- set comments_config = theme.giscus %}
+{%- set mapping_value = {
+  pathname: 'pathname',
+  url: 'url',
+  title: 'title',
+  'og:title': 'og:title',
+  'issue-number': 'issue-number',
+  'issue-term': 'issue-term',
+  'specific-term': 'specific-term'
+} %}
+
+{%- if comments_config.enable %}
+  <div class="comments giscus-container">
+    <script class="giscus-script"
+      src="https://giscus.app/client.js"
+      data-repo="{{ comments_config.repo }}"
+      data-repo-id="{{ comments_config.repo_id }}"
+      data-category="{{ comments_config.category }}"
+      data-category-id="{{ comments_config.category_id }}"
+      data-mapping="{{ mapping_value[comments_config.mapping] | default('pathname') }}"
+      data-strict="{{ comments_config.strict | default(0) }}"
+      data-reactions-enabled="{{ comments_config.reactions_enabled | default(1) }}"
+      data-emit-metadata="{{ comments_config.emit_metadata | default(0) }}"
+      data-input-position="{{ comments_config.input_position | default('bottom') }}"
+      data-theme="{{ comments_config.theme | default('preferred_color_scheme') }}"
+      data-lang="{{ comments_config.lang | default('en') }}"
+      data-loading="{{ comments_config.loading | default('lazy') }}"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </div>
+{%- endif %}
