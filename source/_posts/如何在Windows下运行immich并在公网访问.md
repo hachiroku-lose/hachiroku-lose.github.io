@@ -31,7 +31,7 @@ docker-compose.yml (**核心服务定义**,定义了 Immich 运行所需的所�
 
 example.env (**环境变量**,包含部署所需的所有关键设置，例如数据库凭证、时区、密钥 (`SECRET`) 和上传目录路径等。您需要复制并修改它为.env)
 
-hwaccel.ml.yml (**机器学习配置**一个 **Docker Compose 扩展文件**，用于配置机器学习服务（用于图像识别和搜索），使其能够利用硬件加速（如 GPU）。)
+hwaccel.ml.yml (**机器学习配置**,一个 **Docker Compose 扩展文件**，用于配置机器学习服务（用于图像识别和搜索），使其能够利用硬件加速（如 GPU）。)
 
 hwaccel.transcoding.yml (**硬件转码配置**,一个 **Docker Compose 扩展文件**，专门用于启用视频转码的硬件加速功能（如 Intel Quick Sync、Nvidia）。它会修改核心服务定义以暴露必要的设备。)
 
@@ -58,8 +58,6 @@ hwaccel.transcoding.yml (**硬件转码配置**,一个 **Docker Compose 扩展�
    $Env:https_proxy="http:/ /127.0.0.1:你代理软件的监听端口";
 
 这里为了防止被识别成链接打了两个空格,**请勿直接复制使用**
-
-
 
 ## 外部图库的使用方法
 
