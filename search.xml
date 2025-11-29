@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>如何在Windows下运行immich并在公网访问</title>
+    <url>/2025/11/22/%E5%A6%82%E4%BD%95%E5%9C%A8Windows%E4%B8%8B%E8%BF%90%E8%A1%8Cimmich%E5%B9%B6%E5%9C%A8%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
+    <content><![CDATA[<p>高效利用手上的垃圾硬件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/immich%E5%BE%BD%E6%A0%87.svg"></p>
+<span id="more"></span>
+
+<p>注意!在阅读本文之前请务必先阅读<a href="https://docs.immich.app/overview/quick-start/">immich的官方文档</a> </p>
+<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><p>immich运行在docker上,因此在进行任何操作前必须安装docker</p>
+<p>👉[Docker Desktop](<a href="https://www.docker.com/products/docker-desktop/">Docker Desktop: The #1 Containerization Tool for Developers | Docker</a>) 你可以很轻松的下载到合适版本的docker</p>
+<h2 id="部署immich"><a href="#部署immich" class="headerlink" title="部署immich"></a>部署immich</h2><p>docker安装完成后就该部署immich了</p>
+<p><a href="immich.app">这里</a> 是immich的官方网站,<a href="https://github.com/immich-app/immich/releases/">这里</a> 是他们的github页面</p>
+<p>我们需要在他们的github页面上获取以下四个文件</p>
+<p>docker-compose.yml (<strong>核心服务定义</strong>,定义了 Immich 运行所需的所有 Docker 服务（如 <code>server</code>、<code>web</code>、<code>microservices</code>、<code>Redis</code>、<code>Postgres</code> 等），以及它们之间的网络和卷配置。)</p>
+<p>example.env (<strong>环境变量</strong>,包含部署所需的所有关键设置，例如数据库凭证、时区、密钥 (<code>SECRET</code>) 和上传目录路径等。您需要复制并修改它为.env)</p>
+<p>hwaccel.ml.yml (<strong>机器学习配置</strong>,一个 <strong>Docker Compose 扩展文件</strong>，用于配置机器学习服务（用于图像识别和搜索），使其能够利用硬件加速（如 GPU）。)</p>
+<p>hwaccel.transcoding.yml (<strong>硬件转码配置</strong>,一个 <strong>Docker Compose 扩展文件</strong>，专门用于启用视频转码的硬件加速功能（如 Intel Quick Sync、Nvidia）。它会修改核心服务定义以暴露必要的设备。)</p>
+<p>全部准备完成后将他们放在同一个目录下</p>
+<p><code>docker compose up -d</code></p>
+<p>即可自动的下载镜像并部署</p>
+<p>需要更新的话</p>
+<p><code>docker compose pull</code></p>
+<p>就可以自动拉取新的镜像,并更新了</p>
+<p>更新完成后,先前的镜像不会被删除,需要自己去docker desktop删除</p>
+<h2 id="中国大陆地区镜像被墙的解决方法"><a href="#中国大陆地区镜像被墙的解决方法" class="headerlink" title="中国大陆地区镜像被墙的解决方法"></a>中国大陆地区镜像被墙的解决方法</h2><p>目前最好的方法就是给powershell配置一个http代理</p>
+<p>   $Env:http_proxy&#x3D;”http:&#x2F; &#x2F;127.0.0.1:你代理软件的监听端口”;</p>
+<p>   $Env:https_proxy&#x3D;”http:&#x2F; &#x2F;127.0.0.1:你代理软件的监听端口”;</p>
+<p>这里为了防止被识别成链接打了两个空格,<strong>请勿直接复制使用</strong></p>
+<h2 id="外部图库的使用方法"><a href="#外部图库的使用方法" class="headerlink" title="外部图库的使用方法"></a>外部图库的使用方法</h2><p>想要把自己的图片导入immich?使用外部图库可以轻松的导入大量的照片</p>
+<p>打开 docker-compose.yml</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2025-11-21_16-46-05.png"></p>
+<p>找到这个字段,</p>
+<p>以 “E:&#x2F;photo:&#x2F;mnt&#x2F;photo:rw” 这行举例子</p>
+<p><code>E:/photo </code>是你的外部图片所在的路径</p>
+<p><code>/mnt/photo</code>是你将<code>E:/photo</code> 映射到immich时的路径,一般会映射到<code>/mnt/xxx</code> ([Linux 系统目录结构](<a href="https://www.runoob.com/linux/linux-system-contents.html">Linux 系统目录结构 | 菜鸟教程</a>))</p>
+<p><code>:rw</code> 这个路径是可 读(r) 写(w)的</p>
+<p>然后打开你immich的webui页面,打开系统管理,找到外部图库,创建图库,选择图库所有者</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/20251121181353082.png"></p>
+<p>在这里填入你刚才<strong>映射到immich内部的路径</strong></p>
+<p>然后等待即可</p>
+<h2 id="配置公网访问"><a href="#配置公网访问" class="headerlink" title="配置公网访问"></a>配置公网访问</h2><p>我个人比较喜欢使用  [Cloudflare Tunnel](<a href="https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/">Cloudflare Tunnel · Cloudflare One docs</a>) 来实现公网访问</p>
+<p>操作方法如下</p>
+<p>我不推荐直接安装他们提供的Windows的安装方法,因为会出现奇奇怪怪的问题</p>
+<p>我个人更喜欢在docker下运行</p>
+<p>新建一个空文件夹,这里我就叫它cloudflared好了</p>
+<p>新建一个 docker-compose.yml 文件</p>
+<p>version: “3”</p>
+<p>services:</p>
+<p>  cftunnel:</p>
+<p>    image: cloudflare&#x2F;cloudflared:latest</p>
+<p>    container_name: cftunnel</p>
+<p>    restart: unless-stopped</p>
+<p>    command: tunnel –no-autoupdate run –token 你的token</p>
+<p>然后 powershell运行</p>
+<p><code>docker compose up -d</code></p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>修改immich任何的配置文件后,都需要重新运行</p>
+<p><code>docker compose up -d</code> 才能生效</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>next主题语言的配置方法</title>
+    <url>/2025/10/25/next%E4%B8%BB%E9%A2%98%E8%AF%AD%E8%A8%80%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/1.png" alt="Alt描述"><br><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/2.png" alt="Alt描述"><br>根目录下的_config.yml与themes&#x2F;next&#x2F;languages的文件名一致即可</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>测试文章</title>
+    <url>/2025/08/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>What exactly is Lolicon</p>
+<span id="more"></span>
+<h2 id="What-exactly-is-Lolicon"><a href="#What-exactly-is-Lolicon" class="headerlink" title="What exactly is Lolicon"></a>What exactly is Lolicon</h2><h3 id="1-Society’s-perception-of-this-behavior"><a href="#1-Society’s-perception-of-this-behavior" class="headerlink" title="1. Society’s perception of this behavior"></a>1. Society’s perception of this behavior</h3><p>I think there is a lot of bias in the world’s view towards the group of Lolicon nowadays. In society, whether at home or abroad, treating this group is like treating criminals. The world simply interprets Lolicon’s behavior as a pervert who will be in love with young girls, without understanding the true meaning of this behavior.</p>
+<h3 id="2，Physiological-Causes-of-Lolicon"><a href="#2，Physiological-Causes-of-Lolicon" class="headerlink" title="2，Physiological Causes of Lolicon"></a>2，Physiological Causes of Lolicon</h3><p>According to a large amount of data, all Lolicon have a common physicological characteristic, which is that their sexual activity is very early. That is to say, when these people may unintentionally or intentionally come into contact with adult sexual content in a curious way, due to their young age and immature mentality, they will develop a sense of disgust and vomiting towards sexual behavior. If they have this feeling, then these people need to find a sense of “Recognition” at a young age.</p>
+<p>So these people tend to reject normal sexual content and instead accept the opposite sex in their own age group.</p>
+<h3 id="3-The-psychological-causes-of-Lolicon"><a href="#3-The-psychological-causes-of-Lolicon" class="headerlink" title="3. The psychological causes of Lolicon"></a>3. The psychological causes of Lolicon</h3><p>The majority of the lolicon come from the otaku tribe. Some otaku people have a great sense of psychological imbalance, which includes but is not limited to unconventional behaviors such as worldliness and antisocial behavior. When they are unable to change, what left for them is only avoidence. The elevated world created by Japanese anime is clearly suitable for their escape. After choosing an elevated world as a way of escape, these people will find their preferences in this world.</p>
+<p>There are many kinds of preferences in the anime, and those who have physiological problems at the beginning of sexual initiation will choose loli as their escape with many factors combined.</p>
+<p>So, the psychological problem of Lolicon mostly lies in “avoidance”. However, there are many people who escape to anime. Why do Lolicon choose such an absurd sexual addiction?</p>
+<p>To solve this argument, we need to get to know the psychological characteristics of them.</p>
+<ul>
+<li>Initially, they possess a kind heart, and due to the complex, cruel, and harsh realities of society mentioned above, they often exhibit a “xenophobic” mindset. This may lead them to have emotionally extreme reactions to certain harsh events based on their own experiences. Individuals who are overly kind often find it difficult to comprehend the unkindness of the world, which contributes to the formation of this group.</li>
+<li>Besides, they possess a strong ability to objectively assess and analyze things, and their learning capabilities are impressive. As a result, when faced with certain objective facts, it is impossible for them to simply “ignore” them. Because their thought processes are so thorough, they are able to see the bigger picture when analyzing situations, which in turn deepens their sense of “social imbalance.”</li>
+<li>In addition to this, their approach to problem-solving is often imbued with a certain “childlike innocence.” This is a rare and valuable trait in today’s society. They are unafraid to express their most authentic thoughts, to admire the things they find adorable, and to openly express love to those they hold dear. They despise social niceties, the wearing of masks in public, and anything that violates their perception of “loli.”</li>
+<li>Some of them may be drawn to cute things due to certain family or personality flaws. The specific situations are as follows, and it is worth categorizing for further discussion:<ul>
+<li>Lack of childhood or childhood playmates: Usually, the childhood of Lolicon is blank, without happy enjoyment, and also without their childhood friends. This will lead them to develop a desire for the emotions they lacked in their childhood, and naturally turn their sexual addiction into a younger age.</li>
+<li>Lack of family emotions: In an unhappy family, Lolicon may develop a deep fear of marriage. When experiencing the relationship between women and men, they unconsciously engage in rejection. So they will choose children as the objects of care, just because they cannot face normal heterosexual interactions. In summary, this situation can be summarized in six words: aversion to marriage and love children.</li>
+<li>Lack of social skills: They lack the ability to interact with others (especially the opposite sex). For normal interactions of the opposite sex, this group of people will choose to exclude. They will feel that if they interact with younger children, they don’t need to think too much and can become as simple and happy as possible.</li>
+<li>Loneliness and dissociability: This group of people usually have their own ideals, pursuits, and a life state that is different from what normal people pursue. So they will eventually be ostracized by the group. Being excluded by a group ultimately leads to loneliness. Lonely people seek redemption. They feel that they can gain emotions in children’s innocence that they cannot find in the cold crowd, so they will like it.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-“Loli”-and-Faith"><a href="#4-“Loli”-and-Faith" class="headerlink" title="4. “Loli” and Faith"></a>4. “Loli” and Faith</h3><p>How did the Lolicon handle their complex with Lolita? The answer is that some positive lolicons tend to turn this complex into motivation, which has no clear goal. No matter what these people are pursuing, they have indeed improved themselves. If this complex towards Loli is turned into a belief, they will automatically reject all external strange looks and only pursue what they want. Nobody can move the pursuit of gods.</p>
+<h3 id="5-To-make-Lolicons-compatible-with-society-I-believe-two-joint-efforts-are-needed"><a href="#5-To-make-Lolicons-compatible-with-society-I-believe-two-joint-efforts-are-needed" class="headerlink" title="5. To make Lolicons compatible with society, I believe two joint efforts are needed:"></a>5. To make Lolicons compatible with society, I believe two joint efforts are needed:</h3><ul>
+<li><strong>Social aspect</strong>: it is not necessary to exaggerate and take seriously the “paedophilia” complex within the anime scope, and we can appropriate accommodate these people who are not compatible with the society. Society should also advocate for reducing discrimination against Lolicons.</li>
+<li><strong>On a personal level</strong>: Lolicons should have a bottom line and not do anything that goes against ethics and morality. If society gives you space to vent your desires, don’t take any chances and do abstract things.</li>
+</ul>
+<p>Lolicon is not what the world calls a pervert. Save these people who want to have a gentle and lovely girlfriend but are unable to socialize with normal women!</p>
+<p>Finally, I would like to end with a Bible:</p>
+<blockquote>
+<p>Love and peace cannot be exchanged for anything. Decadence doesn’t matter, time keeps passing, so I can only say I am keen on it.<br>With this grace, I will not harm anyone and love this wonderful civilization.<br>Save us.</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+</search>
