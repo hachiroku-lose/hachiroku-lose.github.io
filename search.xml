@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>next主题语言的配置方法</title>
+    <url>/2025/10/25/next%E4%B8%BB%E9%A2%98%E8%AF%AD%E8%A8%80%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/1.png" alt="Alt描述"><br><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/2.png" alt="Alt描述"><br>根目录下的_config.yml与themes&#x2F;next&#x2F;languages的文件名一致即可</p>
+]]></content>
+  </entry>
+  <entry>
     <title>如何在Windows下运行immich并在公网访问</title>
     <url>/2025/11/22/%E5%A6%82%E4%BD%95%E5%9C%A8Windows%E4%B8%8B%E8%BF%90%E8%A1%8Cimmich%E5%B9%B6%E5%9C%A8%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
     <content><![CDATA[<p>高效利用手上的垃圾硬件</p>
@@ -57,12 +63,6 @@
 <p><code>docker compose up -d</code></p>
 <h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>修改immich任何的配置文件后,都需要重新运行</p>
 <p><code>docker compose up -d</code> 才能生效</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>next主题语言的配置方法</title>
-    <url>/2025/10/25/next%E4%B8%BB%E9%A2%98%E8%AF%AD%E8%A8%80%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/1.png" alt="Alt描述"><br><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/2.png" alt="Alt描述"><br>根目录下的_config.yml与themes&#x2F;next&#x2F;languages的文件名一致即可</p>
 ]]></content>
   </entry>
   <entry>
