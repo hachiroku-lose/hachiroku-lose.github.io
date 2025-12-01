@@ -112,3 +112,8 @@ search:
   field: post
   content: true
   format: html
+
+  Plugins:
+   hexo-generator-sitemap
+sitemap:
+    path: sitemap.xml

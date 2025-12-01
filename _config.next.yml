@@ -102,7 +102,7 @@ menu:
   #categories: /categories/ || th
   #archives: /posts/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
+  sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
   Links: /links/ || link
 # Enable / Disable menu icons / item badges.
