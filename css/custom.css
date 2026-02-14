@@ -1,0 +1,22 @@
+/* 全局背景设定 */
+body {
+  background-image: url("https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Appalachian_Mountains.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/* 让 Gemini 的内容板块变为半透明，露出背后的山脉 */
+.post-block,
+.sidebar-inner,
+.header-inner,
+.comments {
+/* 评论区卡片 */
+  background: rgba(255,255,255,0.8) !important; /* 80%透明度的白色 */
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  border-radius: 10px; /* 圆角看起来更舒服 */
+}
+/* 移除 Gemini 方案默认的浅灰色背景 */
+.main-inner {
+  background: transparent;
+}

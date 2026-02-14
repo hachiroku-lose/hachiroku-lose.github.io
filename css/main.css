@@ -1221,7 +1221,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #71ffff;
+    background: #181d3c;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2723,4 +2723,23 @@ header.header {
 .giscus {
   max-width: unset;
   box-sizing: border-box;
+}
+body {
+  background-image: url("https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Appalachian_Mountains.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.post-block,
+.sidebar-inner,
+.header-inner,
+.comments {
+/* 评论区卡片 */
+  background: rgba(255,255,255,0.8) !important; /* 80%透明度的白色 */
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  border-radius: 10px; /* 圆角看起来更舒服 */
+}
+.main-inner {
+  background: transparent;
 }
