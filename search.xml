@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>next主题语言的配置方法</title>
-    <url>/2025/10/25/next%E4%B8%BB%E9%A2%98%E8%AF%AD%E8%A8%80%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/1.png" alt="Alt描述"><br><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/2.png" alt="Alt描述"><br>根目录下的_config.yml与themes&#x2F;next&#x2F;languages的文件名一致即可</p>
+    <title>如何使用vlc打开有菜单的光盘</title>
+    <url>/2026/04/05/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8vlc%E6%89%93%E5%BC%80%E6%9C%89%E8%8F%9C%E5%8D%95%E7%9A%84%E5%85%89%E7%9B%98/</url>
+    <content><![CDATA[<p>菜单是促使我找原盘而不是mkv的动力(虽然扔emby还得是mkv)</p>
+<span id="more"></span>
+<p>打开vlc 3.0.23</p>
+<p>找到媒体(M),打开光盘(D)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-42-52.png"></p>
+<p>选择你的光盘文件,本文以一张抓取并解密后的[点兔bd](<a href="https://nyaa.si/view/1180636">[BDMV] ご注文はうさぎですか？？ ～Dear My Sister～ [Fixed] :: Nyaa</a>)作为演示</p>
+<p>注意,bd要选择的文件夹是有BDMV和CERTIFICATE,如果你要看的是dvd,应该打开VIDEO_TS文件夹,此外,vlc只能打开文件夹,如果你是iso文件,你应该挂载或解压</p>
+<p>关于原盘文件的获取,你可以选择从网上下载或者使用makemkv进行抓取,可以参考</p>
+<p><a href="https://www.liups.net/2024/10/%E5%85%89%E9%A9%B1-libredrive-%E8%A7%A3%E9%94%81%E5%8C%BA%E5%9F%9F%E5%92%8C%E5%8A%A0%E5%AF%86%E9%99%90%E5%88%B6/#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6">给光驱刷入 LibreDrive 固件解锁区域和加密限制 - Liups233の小站</a></p>
+<p><a href="https://www.liups.net/2025/01/%e6%8b%b7%e8%b4%9d-dvd-bluray-%e5%b9%b6%e4%bd%bf%e7%94%a8-megui-%e5%8e%8b%e5%88%b6/">拷贝 DVD／Blu-ray 光盘并使用 MeGUI 压制 - Liups233の小站</a></p>
+<p>如果日后有机会也可能会写一篇关于BD原盘和bdrip的内容</p>
+<p>对于有AACS保护的光盘,我不推荐你去折腾证书,你可以使用MakeMKV自带的集成功能,或者直接抓取</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/20260405020132299.png"></p>
+<p>回到vlc,如图所示进行勾选,然后点击播放,此时会播放一段片头,你可以通过快进来跳过</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-51-02.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-52-46.png"></p>
+<p>到正片后点一下被框选的按键,就可以看到菜单了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-53-13.png"></p>
 ]]></content>
   </entry>
   <entry>
@@ -44,6 +61,12 @@
       <tags>
         <tag>测试</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>next主题语言的配置方法</title>
+    <url>/2025/10/25/next%E4%B8%BB%E9%A2%98%E8%AF%AD%E8%A8%80%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/1.png" alt="Alt描述"><br><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/2.png" alt="Alt描述"><br>根目录下的_config.yml与themes&#x2F;next&#x2F;languages的文件名一致即可</p>
+]]></content>
   </entry>
   <entry>
     <title>如何在Windows下运行immich并在公网访问</title>
