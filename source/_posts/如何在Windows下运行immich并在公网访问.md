@@ -1,7 +1,7 @@
 ---
 title: 如何在Windows下运行immich并在公网访问
 date: 2025-11-22 10:02:00
-tags:
+tags: 教程
 
 ---
 
