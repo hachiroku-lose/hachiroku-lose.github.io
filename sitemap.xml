@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.ibukifuko.org/2026/04/20/JMS578%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2026-04-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ibukifuko.org/2025/08/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    
+    <lastmod>2026-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ibukifuko.org/2025/11/22/%E5%A6%82%E4%BD%95%E5%9C%A8Windows%E4%B8%8B%E8%BF%90%E8%A1%8Cimmich%E5%B9%B6%E5%9C%A8%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE/</loc>
+    
+    <lastmod>2026-04-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ibukifuko.org/2026/04/05/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8vlc%E6%89%93%E5%BC%80%E6%9C%89%E8%8F%9C%E5%8D%95%E7%9A%84%E5%85%89%E7%9B%98/</loc>
     
     <lastmod>2026-04-04</lastmod>
@@ -20,25 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ibukifuko.org/2025/08/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
-    
-    <lastmod>2025-11-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.ibukifuko.org/about/index.html</loc>
-    
-    <lastmod>2025-11-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ibukifuko.org/2025/11/22/%E5%A6%82%E4%BD%95%E5%9C%A8Windows%E4%B8%8B%E8%BF%90%E8%A1%8Cimmich%E5%B9%B6%E5%9C%A8%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE/</loc>
     
     <lastmod>2025-11-23</lastmod>
     
@@ -58,7 +67,7 @@
 
   <url>
     <loc>https://blog.ibukifuko.org/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,7 +75,14 @@
   
   <url>
     <loc>https://blog.ibukifuko.org/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ibukifuko.org/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
