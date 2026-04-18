@@ -1,74 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>next主题语言的配置方法</title>
-    <url>/2025/10/25/next%E4%B8%BB%E9%A2%98%E8%AF%AD%E8%A8%80%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/1.png" alt="Alt描述"><br><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/2.png" alt="Alt描述"><br>根目录下的_config.yml与themes&#x2F;next&#x2F;languages的文件名一致即可</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>如何使用vlc打开有菜单的光盘</title>
-    <url>/2026/04/05/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8vlc%E6%89%93%E5%BC%80%E6%9C%89%E8%8F%9C%E5%8D%95%E7%9A%84%E5%85%89%E7%9B%98/</url>
-    <content><![CDATA[<p>菜单是促使我找原盘而不是mkv的动力(虽然扔emby还得是mkv)</p>
-<span id="more"></span>
-<p>打开vlc 3.0.23</p>
-<p>找到媒体(M),打开光盘(D)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-42-52.png"></p>
-<p>选择你的光盘文件,本文以一张抓取并解密后的[点兔bd](<a href="https://nyaa.si/view/1180636">[BDMV] ご注文はうさぎですか？？ ～Dear My Sister～ [Fixed] :: Nyaa</a>)作为演示</p>
-<p>注意,bd要选择的文件夹是有BDMV和CERTIFICATE,如果你要看的是dvd,应该打开VIDEO_TS文件夹,此外,vlc只能打开文件夹,如果你是iso文件,你应该挂载或解压</p>
-<p>关于原盘文件的获取,你可以选择从网上下载或者使用makemkv进行抓取,可以参考</p>
-<p><a href="https://www.liups.net/2024/10/%E5%85%89%E9%A9%B1-libredrive-%E8%A7%A3%E9%94%81%E5%8C%BA%E5%9F%9F%E5%92%8C%E5%8A%A0%E5%AF%86%E9%99%90%E5%88%B6/#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6">给光驱刷入 LibreDrive 固件解锁区域和加密限制 - Liups233の小站</a></p>
-<p><a href="https://www.liups.net/2025/01/%e6%8b%b7%e8%b4%9d-dvd-bluray-%e5%b9%b6%e4%bd%bf%e7%94%a8-megui-%e5%8e%8b%e5%88%b6/">拷贝 DVD／Blu-ray 光盘并使用 MeGUI 压制 - Liups233の小站</a></p>
-<p>如果日后有机会也可能会写一篇关于BD原盘和bdrip的内容</p>
-<p>对于有AACS保护的光盘,我不推荐你去折腾证书,你可以使用MakeMKV自带的集成功能,或者直接抓取</p>
-<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/20260405020132299.png"></p>
-<p>回到vlc,如图所示进行勾选,然后点击播放,此时会播放一段片头,你可以通过快进来跳过</p>
-<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-51-02.png"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-52-46.png"></p>
-<p>到正片后点一下被框选的按键,就可以看到菜单了</p>
-<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-53-13.png"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>测试文章</title>
-    <url>/2025/08/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>What exactly is Lolicon</p>
-<span id="more"></span>
-<h2 id="What-exactly-is-Lolicon"><a href="#What-exactly-is-Lolicon" class="headerlink" title="What exactly is Lolicon"></a>What exactly is Lolicon</h2><h3 id="1-Society’s-perception-of-this-behavior"><a href="#1-Society’s-perception-of-this-behavior" class="headerlink" title="1. Society’s perception of this behavior"></a>1. Society’s perception of this behavior</h3><p>I think there is a lot of bias in the world’s view towards the group of Lolicon nowadays. In society, whether at home or abroad, treating this group is like treating criminals. The world simply interprets Lolicon’s behavior as a pervert who will be in love with young girls, without understanding the true meaning of this behavior.</p>
-<h3 id="2，Physiological-Causes-of-Lolicon"><a href="#2，Physiological-Causes-of-Lolicon" class="headerlink" title="2，Physiological Causes of Lolicon"></a>2，Physiological Causes of Lolicon</h3><p>According to a large amount of data, all Lolicon have a common physicological characteristic, which is that their sexual activity is very early. That is to say, when these people may unintentionally or intentionally come into contact with adult sexual content in a curious way, due to their young age and immature mentality, they will develop a sense of disgust and vomiting towards sexual behavior. If they have this feeling, then these people need to find a sense of “Recognition” at a young age.</p>
-<p>So these people tend to reject normal sexual content and instead accept the opposite sex in their own age group.</p>
-<h3 id="3-The-psychological-causes-of-Lolicon"><a href="#3-The-psychological-causes-of-Lolicon" class="headerlink" title="3. The psychological causes of Lolicon"></a>3. The psychological causes of Lolicon</h3><p>The majority of the lolicon come from the otaku tribe. Some otaku people have a great sense of psychological imbalance, which includes but is not limited to unconventional behaviors such as worldliness and antisocial behavior. When they are unable to change, what left for them is only avoidence. The elevated world created by Japanese anime is clearly suitable for their escape. After choosing an elevated world as a way of escape, these people will find their preferences in this world.</p>
-<p>There are many kinds of preferences in the anime, and those who have physiological problems at the beginning of sexual initiation will choose loli as their escape with many factors combined.</p>
-<p>So, the psychological problem of Lolicon mostly lies in “avoidance”. However, there are many people who escape to anime. Why do Lolicon choose such an absurd sexual addiction?</p>
-<p>To solve this argument, we need to get to know the psychological characteristics of them.</p>
-<ul>
-<li>Initially, they possess a kind heart, and due to the complex, cruel, and harsh realities of society mentioned above, they often exhibit a “xenophobic” mindset. This may lead them to have emotionally extreme reactions to certain harsh events based on their own experiences. Individuals who are overly kind often find it difficult to comprehend the unkindness of the world, which contributes to the formation of this group.</li>
-<li>Besides, they possess a strong ability to objectively assess and analyze things, and their learning capabilities are impressive. As a result, when faced with certain objective facts, it is impossible for them to simply “ignore” them. Because their thought processes are so thorough, they are able to see the bigger picture when analyzing situations, which in turn deepens their sense of “social imbalance.”</li>
-<li>In addition to this, their approach to problem-solving is often imbued with a certain “childlike innocence.” This is a rare and valuable trait in today’s society. They are unafraid to express their most authentic thoughts, to admire the things they find adorable, and to openly express love to those they hold dear. They despise social niceties, the wearing of masks in public, and anything that violates their perception of “loli.”</li>
-<li>Some of them may be drawn to cute things due to certain family or personality flaws. The specific situations are as follows, and it is worth categorizing for further discussion:<ul>
-<li>Lack of childhood or childhood playmates: Usually, the childhood of Lolicon is blank, without happy enjoyment, and also without their childhood friends. This will lead them to develop a desire for the emotions they lacked in their childhood, and naturally turn their sexual addiction into a younger age.</li>
-<li>Lack of family emotions: In an unhappy family, Lolicon may develop a deep fear of marriage. When experiencing the relationship between women and men, they unconsciously engage in rejection. So they will choose children as the objects of care, just because they cannot face normal heterosexual interactions. In summary, this situation can be summarized in six words: aversion to marriage and love children.</li>
-<li>Lack of social skills: They lack the ability to interact with others (especially the opposite sex). For normal interactions of the opposite sex, this group of people will choose to exclude. They will feel that if they interact with younger children, they don’t need to think too much and can become as simple and happy as possible.</li>
-<li>Loneliness and dissociability: This group of people usually have their own ideals, pursuits, and a life state that is different from what normal people pursue. So they will eventually be ostracized by the group. Being excluded by a group ultimately leads to loneliness. Lonely people seek redemption. They feel that they can gain emotions in children’s innocence that they cannot find in the cold crowd, so they will like it.</li>
-</ul>
-</li>
-</ul>
-<h3 id="4-“Loli”-and-Faith"><a href="#4-“Loli”-and-Faith" class="headerlink" title="4. “Loli” and Faith"></a>4. “Loli” and Faith</h3><p>How did the Lolicon handle their complex with Lolita? The answer is that some positive lolicons tend to turn this complex into motivation, which has no clear goal. No matter what these people are pursuing, they have indeed improved themselves. If this complex towards Loli is turned into a belief, they will automatically reject all external strange looks and only pursue what they want. Nobody can move the pursuit of gods.</p>
-<h3 id="5-To-make-Lolicons-compatible-with-society-I-believe-two-joint-efforts-are-needed"><a href="#5-To-make-Lolicons-compatible-with-society-I-believe-two-joint-efforts-are-needed" class="headerlink" title="5. To make Lolicons compatible with society, I believe two joint efforts are needed:"></a>5. To make Lolicons compatible with society, I believe two joint efforts are needed:</h3><ul>
-<li><strong>Social aspect</strong>: it is not necessary to exaggerate and take seriously the “paedophilia” complex within the anime scope, and we can appropriate accommodate these people who are not compatible with the society. Society should also advocate for reducing discrimination against Lolicons.</li>
-<li><strong>On a personal level</strong>: Lolicons should have a bottom line and not do anything that goes against ethics and morality. If society gives you space to vent your desires, don’t take any chances and do abstract things.</li>
-</ul>
-<p>Lolicon is not what the world calls a pervert. Save these people who want to have a gentle and lovely girlfriend but are unable to socialize with normal women!</p>
-<p>Finally, I would like to end with a Bible:</p>
-<blockquote>
-<p>Love and peace cannot be exchanged for anything. Decadence doesn’t matter, time keeps passing, so I can only say I am keen on it.<br>With this grace, I will not harm anyone and love this wonderful civilization.<br>Save us.</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何在Windows下运行immich并在公网访问</title>
     <url>/2025/11/22/%E5%A6%82%E4%BD%95%E5%9C%A8Windows%E4%B8%8B%E8%BF%90%E8%A1%8Cimmich%E5%B9%B6%E5%9C%A8%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE/</url>
     <content><![CDATA[<p>高效利用手上的垃圾硬件</p>
@@ -136,12 +68,93 @@
     <content><![CDATA[<p>给JMS578刷写合适的固件</p>
 <span id="more"></span>
 
+<p><strong>⚠⚠⚠警告⚠⚠⚠</strong></p>
+<p><strong>刷写固件有变砖风险,以下是来自某个易驱线品牌的官方教程,但无论使用何种方式,请在操作前使用JMS578FwUpdateTool_v1_19_16_24文件夹下的FwUpdateTool_v1_19_16_24.exe进行固件备份,本人不对任何操作的后果负责,请务必阅读全文后再进行操作</strong></p>
+<p>备份方法如下</p>
+<p>1,打开FwUpdateTool_v1_19_16_24.exe</p>
+<p>2,勾选 RD version</p>
+<p>3,给易驱线插上一块硬盘(最好不是光驱),如图所示配置,务必填写 backup filename,那是你备份的固件的文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-18_22-19-24.png"></p>
+<p>下面是官方固件刷入教程,但部分固件可能不能通过此方法刷入,详见下文</p>
 <p>1、打开如下红圈的烧录软件“JMMassProd”<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image101.png"><br>2、进入烧录软件后显示页面如下所示<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image102.png"><br>3、勾选“RD Version”后会弹出输入密码框，输入“jmicron”，点击 OK<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image103.png"></p>
 <p>4、点击 1 指的“Load F&#x2F;W File”，打开烧录教程文件中的.bin 文件。<br>如果需要烧录硬盘分位则选择“JMS578_GD25619”文件后点击“打开”；<br>如果需要烧录光驱分位则选择“JMS578_STD”文件后点击“打开<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image104.png"><br>5、将JMS578的 USB 口连接到电脑 USB 接口，连接上后指示灯会亮起，烧录软件<br>页面会出现类似下图的 Port 信息，然后点击“START”就开始烧录了。如果直接将 S108<br>连接到电脑上未出现 Port 信息，可将 S108 的 SATA 接口连接上硬盘，一般就会出现了。<br>如果连接上硬盘还未出现，需连接12V电源供电,因此为了便于操作,建议使用5v供电的硬盘<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image105.png"><br>6、看到烧录软件出现了”Pass”标识，则说明烧录成功<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image106.png"><br>7、如果电脑接口没有 USB3.0 接口，也可以通过 USB2.0 接口完成烧录，注意保持<br>USB3.1 Gen1 和 USB3.1 Gen2 不勾选的状态。上面的教程我们是通过 USB3.0 接口完成<br>的<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image107.png"></p>
+<p>对于不能使用上面工具刷入的固件,可以通过FwUpdateTool_v1_19_16_24.exe刷入,此时勾选RD version,和之前不一样的地方在于此时勾选 Erase All Firmware Only,然后点击 Run</p>
+<p>此时固件会被清空,再取消勾选RD version,在Firmware选择你想要刷写的固件,然后点Run刷入</p>
+<p>如果此软件在操作时发现 Run是灰色的,请重新选择文件</p>
+<p>下面是救砖教程,我尚未测试,仅供参考</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/20260419022050508.png"></p>
 <p><a href="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@main/JMS578%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95.zip">文件下载</a></p>
 ]]></content>
       <tags>
         <tag>教程</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>next主题语言的配置方法</title>
+    <url>/2025/10/25/next%E4%B8%BB%E9%A2%98%E8%AF%AD%E8%A8%80%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/1.png" alt="Alt描述"><br><img src="https://raw.githubusercontent.com/hachiroku-lose/hachiroku-lose.github.io/refs/heads/master/images/2.png" alt="Alt描述"><br>根目录下的_config.yml与themes&#x2F;next&#x2F;languages的文件名一致即可</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>测试文章</title>
+    <url>/2025/08/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>What exactly is Lolicon</p>
+<span id="more"></span>
+<h2 id="What-exactly-is-Lolicon"><a href="#What-exactly-is-Lolicon" class="headerlink" title="What exactly is Lolicon"></a>What exactly is Lolicon</h2><h3 id="1-Society’s-perception-of-this-behavior"><a href="#1-Society’s-perception-of-this-behavior" class="headerlink" title="1. Society’s perception of this behavior"></a>1. Society’s perception of this behavior</h3><p>I think there is a lot of bias in the world’s view towards the group of Lolicon nowadays. In society, whether at home or abroad, treating this group is like treating criminals. The world simply interprets Lolicon’s behavior as a pervert who will be in love with young girls, without understanding the true meaning of this behavior.</p>
+<h3 id="2，Physiological-Causes-of-Lolicon"><a href="#2，Physiological-Causes-of-Lolicon" class="headerlink" title="2，Physiological Causes of Lolicon"></a>2，Physiological Causes of Lolicon</h3><p>According to a large amount of data, all Lolicon have a common physicological characteristic, which is that their sexual activity is very early. That is to say, when these people may unintentionally or intentionally come into contact with adult sexual content in a curious way, due to their young age and immature mentality, they will develop a sense of disgust and vomiting towards sexual behavior. If they have this feeling, then these people need to find a sense of “Recognition” at a young age.</p>
+<p>So these people tend to reject normal sexual content and instead accept the opposite sex in their own age group.</p>
+<h3 id="3-The-psychological-causes-of-Lolicon"><a href="#3-The-psychological-causes-of-Lolicon" class="headerlink" title="3. The psychological causes of Lolicon"></a>3. The psychological causes of Lolicon</h3><p>The majority of the lolicon come from the otaku tribe. Some otaku people have a great sense of psychological imbalance, which includes but is not limited to unconventional behaviors such as worldliness and antisocial behavior. When they are unable to change, what left for them is only avoidence. The elevated world created by Japanese anime is clearly suitable for their escape. After choosing an elevated world as a way of escape, these people will find their preferences in this world.</p>
+<p>There are many kinds of preferences in the anime, and those who have physiological problems at the beginning of sexual initiation will choose loli as their escape with many factors combined.</p>
+<p>So, the psychological problem of Lolicon mostly lies in “avoidance”. However, there are many people who escape to anime. Why do Lolicon choose such an absurd sexual addiction?</p>
+<p>To solve this argument, we need to get to know the psychological characteristics of them.</p>
+<ul>
+<li>Initially, they possess a kind heart, and due to the complex, cruel, and harsh realities of society mentioned above, they often exhibit a “xenophobic” mindset. This may lead them to have emotionally extreme reactions to certain harsh events based on their own experiences. Individuals who are overly kind often find it difficult to comprehend the unkindness of the world, which contributes to the formation of this group.</li>
+<li>Besides, they possess a strong ability to objectively assess and analyze things, and their learning capabilities are impressive. As a result, when faced with certain objective facts, it is impossible for them to simply “ignore” them. Because their thought processes are so thorough, they are able to see the bigger picture when analyzing situations, which in turn deepens their sense of “social imbalance.”</li>
+<li>In addition to this, their approach to problem-solving is often imbued with a certain “childlike innocence.” This is a rare and valuable trait in today’s society. They are unafraid to express their most authentic thoughts, to admire the things they find adorable, and to openly express love to those they hold dear. They despise social niceties, the wearing of masks in public, and anything that violates their perception of “loli.”</li>
+<li>Some of them may be drawn to cute things due to certain family or personality flaws. The specific situations are as follows, and it is worth categorizing for further discussion:<ul>
+<li>Lack of childhood or childhood playmates: Usually, the childhood of Lolicon is blank, without happy enjoyment, and also without their childhood friends. This will lead them to develop a desire for the emotions they lacked in their childhood, and naturally turn their sexual addiction into a younger age.</li>
+<li>Lack of family emotions: In an unhappy family, Lolicon may develop a deep fear of marriage. When experiencing the relationship between women and men, they unconsciously engage in rejection. So they will choose children as the objects of care, just because they cannot face normal heterosexual interactions. In summary, this situation can be summarized in six words: aversion to marriage and love children.</li>
+<li>Lack of social skills: They lack the ability to interact with others (especially the opposite sex). For normal interactions of the opposite sex, this group of people will choose to exclude. They will feel that if they interact with younger children, they don’t need to think too much and can become as simple and happy as possible.</li>
+<li>Loneliness and dissociability: This group of people usually have their own ideals, pursuits, and a life state that is different from what normal people pursue. So they will eventually be ostracized by the group. Being excluded by a group ultimately leads to loneliness. Lonely people seek redemption. They feel that they can gain emotions in children’s innocence that they cannot find in the cold crowd, so they will like it.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-“Loli”-and-Faith"><a href="#4-“Loli”-and-Faith" class="headerlink" title="4. “Loli” and Faith"></a>4. “Loli” and Faith</h3><p>How did the Lolicon handle their complex with Lolita? The answer is that some positive lolicons tend to turn this complex into motivation, which has no clear goal. No matter what these people are pursuing, they have indeed improved themselves. If this complex towards Loli is turned into a belief, they will automatically reject all external strange looks and only pursue what they want. Nobody can move the pursuit of gods.</p>
+<h3 id="5-To-make-Lolicons-compatible-with-society-I-believe-two-joint-efforts-are-needed"><a href="#5-To-make-Lolicons-compatible-with-society-I-believe-two-joint-efforts-are-needed" class="headerlink" title="5. To make Lolicons compatible with society, I believe two joint efforts are needed:"></a>5. To make Lolicons compatible with society, I believe two joint efforts are needed:</h3><ul>
+<li><strong>Social aspect</strong>: it is not necessary to exaggerate and take seriously the “paedophilia” complex within the anime scope, and we can appropriate accommodate these people who are not compatible with the society. Society should also advocate for reducing discrimination against Lolicons.</li>
+<li><strong>On a personal level</strong>: Lolicons should have a bottom line and not do anything that goes against ethics and morality. If society gives you space to vent your desires, don’t take any chances and do abstract things.</li>
+</ul>
+<p>Lolicon is not what the world calls a pervert. Save these people who want to have a gentle and lovely girlfriend but are unable to socialize with normal women!</p>
+<p>Finally, I would like to end with a Bible:</p>
+<blockquote>
+<p>Love and peace cannot be exchanged for anything. Decadence doesn’t matter, time keeps passing, so I can only say I am keen on it.<br>With this grace, I will not harm anyone and love this wonderful civilization.<br>Save us.</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何使用vlc打开有菜单的光盘</title>
+    <url>/2026/04/05/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8vlc%E6%89%93%E5%BC%80%E6%9C%89%E8%8F%9C%E5%8D%95%E7%9A%84%E5%85%89%E7%9B%98/</url>
+    <content><![CDATA[<p>菜单是促使我找原盘而不是mkv的动力(虽然扔emby还得是mkv)</p>
+<span id="more"></span>
+<p>打开vlc 3.0.23</p>
+<p>找到媒体(M),打开光盘(D)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-42-52.png"></p>
+<p>选择你的光盘文件,本文以一张抓取并解密后的[点兔bd](<a href="https://nyaa.si/view/1180636">[BDMV] ご注文はうさぎですか？？ ～Dear My Sister～ [Fixed] :: Nyaa</a>)作为演示</p>
+<p>注意,bd要选择的文件夹是有BDMV和CERTIFICATE,如果你要看的是dvd,应该打开VIDEO_TS文件夹,此外,vlc只能打开文件夹,如果你是iso文件,你应该挂载或解压</p>
+<p>关于原盘文件的获取,你可以选择从网上下载或者使用makemkv进行抓取,可以参考</p>
+<p><a href="https://www.liups.net/2024/10/%E5%85%89%E9%A9%B1-libredrive-%E8%A7%A3%E9%94%81%E5%8C%BA%E5%9F%9F%E5%92%8C%E5%8A%A0%E5%AF%86%E9%99%90%E5%88%B6/#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6">给光驱刷入 LibreDrive 固件解锁区域和加密限制 - Liups233の小站</a></p>
+<p><a href="https://www.liups.net/2025/01/%e6%8b%b7%e8%b4%9d-dvd-bluray-%e5%b9%b6%e4%bd%bf%e7%94%a8-megui-%e5%8e%8b%e5%88%b6/">拷贝 DVD／Blu-ray 光盘并使用 MeGUI 压制 - Liups233の小站</a></p>
+<p>如果日后有机会也可能会写一篇关于BD原盘和bdrip的内容</p>
+<p>对于有AACS保护的光盘,我不推荐你去折腾证书,你可以使用MakeMKV自带的集成功能,或者直接抓取</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/20260405020132299.png"></p>
+<p>回到vlc,如图所示进行勾选,然后点击播放,此时会播放一段片头,你可以通过快进来跳过</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-51-02.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-52-46.png"></p>
+<p>到正片后点一下被框选的按键,就可以看到菜单了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-05_01-53-13.png"></p>
+]]></content>
   </entry>
 </search>

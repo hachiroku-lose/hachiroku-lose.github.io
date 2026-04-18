@@ -27,6 +27,7 @@
 <meta property="og:site_name" content="hachiroku-lose&#39;s blogs">
 <meta property="og:description" content="给JMS578刷写合适的固件">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-18_22-19-24.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image101.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image102.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image103.png">
@@ -34,12 +35,13 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image105.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image106.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image107.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/20260419022050508.png">
 <meta property="article:published_time" content="2026-04-19T20:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-18T15:08:23.030Z">
+<meta property="article:modified_time" content="2026-04-18T18:35:54.956Z">
 <meta property="article:author" content="hachiroku-lose">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image101.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-18_22-19-24.png">
 
 
 <link rel="canonical" href="https://blog.ibukifuko.org/2026/04/20/JMS578%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95%E6%95%99%E7%A8%8B/">
@@ -252,7 +254,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-04-18 15:08:23" itemprop="dateModified" datetime="2026-04-18T15:08:23Z">2026-04-18</time>
+      <time title="修改时间：2026-04-18 18:35:54" itemprop="dateModified" datetime="2026-04-18T18:35:54Z">2026-04-18</time>
     </span>
 
   
@@ -267,8 +269,21 @@
     <div class="post-body" itemprop="articleBody"><p>给JMS578刷写合适的固件</p>
 <span id="more"></span>
 
+<p><strong>⚠⚠⚠警告⚠⚠⚠</strong></p>
+<p><strong>刷写固件有变砖风险,以下是来自某个易驱线品牌的官方教程,但无论使用何种方式,请在操作前使用JMS578FwUpdateTool_v1_19_16_24文件夹下的FwUpdateTool_v1_19_16_24.exe进行固件备份,本人不对任何操作的后果负责,请务必阅读全文后再进行操作</strong></p>
+<p>备份方法如下</p>
+<p>1,打开FwUpdateTool_v1_19_16_24.exe</p>
+<p>2,勾选 RD version</p>
+<p>3,给易驱线插上一块硬盘(最好不是光驱),如图所示配置,务必填写 backup filename,那是你备份的固件的文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/Snipaste_2026-04-18_22-19-24.png"></p>
+<p>下面是官方固件刷入教程,但部分固件可能不能通过此方法刷入,详见下文</p>
 <p>1、打开如下红圈的烧录软件“JMMassProd”<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image101.png"><br>2、进入烧录软件后显示页面如下所示<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image102.png"><br>3、勾选“RD Version”后会弹出输入密码框，输入“jmicron”，点击 OK<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image103.png"></p>
 <p>4、点击 1 指的“Load F&#x2F;W File”，打开烧录教程文件中的.bin 文件。<br>如果需要烧录硬盘分位则选择“JMS578_GD25619”文件后点击“打开”；<br>如果需要烧录光驱分位则选择“JMS578_STD”文件后点击“打开<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image104.png"><br>5、将JMS578的 USB 口连接到电脑 USB 接口，连接上后指示灯会亮起，烧录软件<br>页面会出现类似下图的 Port 信息，然后点击“START”就开始烧录了。如果直接将 S108<br>连接到电脑上未出现 Port 信息，可将 S108 的 SATA 接口连接上硬盘，一般就会出现了。<br>如果连接上硬盘还未出现，需连接12V电源供电,因此为了便于操作,建议使用5v供电的硬盘<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image105.png"><br>6、看到烧录软件出现了”Pass”标识，则说明烧录成功<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image106.png"><br>7、如果电脑接口没有 USB3.0 接口，也可以通过 USB2.0 接口完成烧录，注意保持<br>USB3.1 Gen1 和 USB3.1 Gen2 不勾选的状态。上面的教程我们是通过 USB3.0 接口完成<br>的<br><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/image107.png"></p>
+<p>对于不能使用上面工具刷入的固件,可以通过FwUpdateTool_v1_19_16_24.exe刷入,此时勾选RD version,和之前不一样的地方在于此时勾选 Erase All Firmware Only,然后点击 Run</p>
+<p>此时固件会被清空,再取消勾选RD version,在Firmware选择你想要刷写的固件,然后点Run刷入</p>
+<p>如果此软件在操作时发现 Run是灰色的,请重新选择文件</p>
+<p>下面是救砖教程,我尚未测试,仅供参考</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@image/blog-image/20260419022050508.png"></p>
 <p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/hachiroku-lose/hachiroku-lose.github.io@main/JMS578%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95.zip">文件下载</a></p>
 
     </div>
