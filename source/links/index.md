@@ -87,6 +87,15 @@ date: 2021-06-16 00:34:27
                   <div class="info">I'm lolicon!</div>
                </div>
             </div>
+                        <div class="card">
+               <img class="ava" src="https://saltedfishes.com/images/avatar.webp" />
+               <div class="card-header">
+                  <div>
+                     <a href="https://saltedfishes.com/">This SaltedFishes's Site...</a>
+                  </div>
+                  <div class="info">hmm... Something should probably be written here.</div>
+               </div>
+            </div>
          </div>
       </div>
    </div>
