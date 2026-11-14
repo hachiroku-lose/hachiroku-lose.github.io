@@ -70,10 +70,10 @@ date: 2021-06-16 00:34:27
       <div class="links-content">
          <div class="link-navigation">
             <div class="card">
-               <img class="ava" src="https://soft.moe/kun.webp" />
+               <img class="ava" src="https://www.kun.moe/avatar.webp" />
                <div class="card-header">
                   <div>
-                     <a href="https://soft.moe//">KUN's Blog</a>
+                     <a href="https://www.kun.moe/">KUN's Blog</a>
                   </div>
                   <div class="info">KUN's moe blog, KUN IS THE CUTEST!</div>
                </div>

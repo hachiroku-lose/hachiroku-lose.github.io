@@ -2,6 +2,12 @@
 # It's recommended to use Alternate Theme Config to configure NexT
 # Modifying this file may result in merge conflict
 # See: https://theme-next.js.org/docs/getting-started/configuration
+#
+# 本站说明：本文件是 themes/next/_config.yml 的覆盖层（Hexo 深合并），
+# 基线为 NexT 8.25.0；已随主题升级到 8.29.1 移除失效项：
+#   - lazyload（8.29 起移除 lozad 懒加载）
+#   - body_scrollbar.stable（8.29 移除）
+#   - firestore.apiKey（8.29 改用 REST，仅需 projectId）
 # ===============================================================
 
 # ---------------------------------------------------------------
@@ -51,8 +57,8 @@ darkmode: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/android-chrome-192x192.pngandroid-chrome-192x192.png
-  medium: /images/android-chrome-512x512.png
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
   apple_touch_icon: /images/apple-touch-icon.png
   safari_pinned_tab: /images/apple-touch-icon.png
   #android_manifest: /manifest.json
@@ -357,8 +363,6 @@ theme_color:
 body_scrollbar:
   # Place the scrollbar over the content.
   overlay: false
-  # Reserving space for the scrollbar gutter even if the content is not overflowing.
-  stable: false
 
 codeblock:
   # Code Highlight theme
@@ -592,10 +596,6 @@ fancybox: false
 # For more information: https://medium-zoom.francoischalifour.com
 mediumzoom: false
 
-# Vanilla JavaScript plugin for lazyloading images.
-# For more information: https://apoorv.pro/lozad.js/demo/
-lazyload: false
-
 # Automatically insert whitespace between CJK and half-width characters.
 # For more information: https://github.com/vinta/pangu.js
 # Server-side plugin: https://github.com/next-theme/hexo-pangu
@@ -816,12 +816,11 @@ plausible:
   site_domain: # www.example.com
 
 # Another tool to show number of visitors to each article.
-# Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
-# Visit https://firebase.google.com/docs/firestore/ to get more information about firestore.
+# Visit https://console.firebase.google.com/ to get projectId.
+# Visit https://firebase.google.com/docs/firestore/use-rest-api for more information.
 firestore:
   enable: false
   collection: articles # Required, a string collection name to access firestore database
-  apiKey: # Required
   projectId: # Required
 
 # Show Views / Visitors of the website / page with busuanzi.
